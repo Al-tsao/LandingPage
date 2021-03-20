@@ -1,0 +1,206 @@
+html {
+  scroll-behavior: smooth;
+}
+.goTop {
+  position: fixed;
+  bottom: 10px;
+  left: 80%;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  color: #d4d4d4;
+}
+.mobile-header {
+  height: 100vh;
+}
+.mobile-header-logo {
+  display: flex;
+  justify-content: center;
+}
+.mobile-header-logo-img {
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+}
+.mobile-header-feature {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #424242;
+  margin: 10px auto 0 auto;
+  padding-left: 15px;
+  position: relative;
+  top: 5px;
+  width: 250px;
+}
+.mobile-header-name {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  vertical-align: sub;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+}
+.mobile-header-email {
+  width: 300px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.mobile-header-email-context {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+  color: #ffa028;
+  background-color: black;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+}
+.mobile-header-DESC {
+  margin: 25px auto 0 auto;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 900;
+  color: #292929;
+  line-height: 25px;
+  width: 300px;
+}
+.mobile-header-topic {
+  margin: 0 auto;
+  width: 300px;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+.mobile-header-topic a{
+  text-decoration: none;
+}
+.mobile-header-topic li {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  color: #292929;
+  transition: font-weight 0.1s ease-out;
+  list-style-type: disc; 
+}
+.mobile-header-topic li:hover{
+  font-weight: 700;
+  color: #424242;
+}
+.mobile-header-note {
+  margin: 10px auto 0 auto;
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  color: #5a5a5a;
+  width: 300px;
+}
+.mobile-header-pic {
+  display: none;
+}
+.mobile-header-links {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  line-height: 45px;
+  font-size: 25px;
+}
+.mobile-header-link {
+  margin: 0 13px;
+  color: black;
+  font-size: 50px;
+  transition: color 0.3s ease-out;
+  position: relative;
+  top: 0;
+  transition: top 0.3s;
+}
+.mobile-header-link:hover{
+  color: #424242;
+  position: relative;
+  top: -5px;
+}
+/* 設定手機板的mobile-header */
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
+@media screen and (min-width: 321px) {
+  .mobile-header-pic {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-header-pic-img {
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+  }
+  .mobile-header-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    line-height: 45px;
+    font-size: 25px;
+  }
+}
+
+.mobile-body {
+  margin: 0 auto;
+  width: 300px;
+}
+.mobile-body-section {
+  height: 100vh;
+  position: relative;
+  margin-bottom: 20px;
+}
+.mobile-body-section-top {
+  margin-top: 60px;
+}
+.mobile-body-section-arrow-close:hover,
+.mobile-body-section-arrow-open:hover {
+  cursor: pointer;
+}
+.fa-chevron-down {
+  position: absolute;
+  top: 40px;
+  left: 230px;
+  color: #424242;
+}
+.mobile-body-section-function {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 900;
+  color: #424242;
+}
+.mobile-body-section-skillSets ul {
+  margin-bottom: 5px;
+}
+.mobile-body-section-skillSet {
+  font-size: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  color: #424242;
+  width: 150px;
+}
+
+.mobile-body-section-DESC {
+  border-top: dotted 1px black;
+  border-bottom: dotted 1px black;
+}
+
+.mobile-body-section-DESC-context {
+  font-size: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  color: #424242;
+}
