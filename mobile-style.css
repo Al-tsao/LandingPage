@@ -4,7 +4,7 @@ html {
 .goTop {
   position: fixed;
   bottom: 10px;
-  left: 80%;
+  left: 85%;
   width: 50px;
   height: 50px;
   z-index: 999;
@@ -130,7 +130,8 @@ html {
 }
 /* 設定手機板的mobile-header */
 @media screen and (min-width: 768px) {
-  .mobile-header {
+  .mobile-header,
+  .mobile-goTop {
     display: none;
   }
 }
@@ -161,46 +162,69 @@ html {
 .mobile-body-section {
   height: 100vh;
   position: relative;
-  margin-bottom: 20px;
-}
-.mobile-body-section-top {
-  margin-top: 60px;
-}
-.mobile-body-section-arrow-close:hover,
-.mobile-body-section-arrow-open:hover {
-  cursor: pointer;
-}
-.fa-chevron-down {
-  position: absolute;
-  top: 40px;
-  left: 230px;
-  color: #424242;
 }
 .mobile-body-section-function {
-  font-size: 20px;
+  padding-top: 60px;
+  font-size: 35px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 900;
-  color: #424242;
+  color: #292929;
+  line-height: 35px;
+  width: 300px;
 }
-.mobile-body-section-skillSets ul {
-  margin-bottom: 5px;
+.mobile-body-section-Title{
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 600;
+  color: #292929;
+  width: 300px;
+  line-height: 25px;
+}
+.mobile-body-section-Company{
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 600;
+  color: #424242;
+  width: 300px;
+}
+.mobile-body-section-skillSets {
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  color: #292929;
+  width: 300px;
 }
 .mobile-body-section-skillSet {
+  margin-left: 20px;
   font-size: 15px;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 900;
-  color: #424242;
-  width: 150px;
+  line-height: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  color: #292929;
+  list-style-type: disc;
 }
-
 .mobile-body-section-DESC {
+  margin-top: 15px;
   border-top: dotted 1px black;
   border-bottom: dotted 1px black;
 }
-
 .mobile-body-section-DESC-context {
   font-size: 15px;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 500;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
   color: #424242;
+  line-height:20px;
+}
+.mobile-block{
+  width: 100px;
+  height: 100px;
+}
+/* 設定手機板的mobile-body mobile-block */
+@media screen and (min-width: 768px) {
+  .mobile-body,
+  .mobile-block {
+    display: none;
+  }
 }
