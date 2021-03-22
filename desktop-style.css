@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+.desktop-header {
+  display: none;
+}
+.desktop-header-nav{
+  width: 100vw;
+  height: 30px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.desktop-header-nav-links{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+.desktop-header-nav-link{
+  height: 20px;
+  margin: 0 5px;
+}
+.desktop-header-nav-link-icon {
+  margin-left: 5px;
+}
+.desktop-header-nav-link a {
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.1s ease-out;
+  border: black 1.5px solid;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+}
+.desktop-header-nav a:hover {
+  border: rgba(255, 255, 255, 0.8) 1.5px solid;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+}
+.desktop-header-email {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffa028;
+}
+.desktop-header-logo {
+  display: flex;
+  justify-content: center;
+}
+.desktop-header-logo-img {
+  margin-top: 11px;
+  width: 100px;
+  height: 100px;
+}
+.desktop-header-bar {
+  width: 740px;
+  height: 30px;
+  margin: 10px auto;
+  border-top: black 1px dotted;
+  border-bottom: black 1px dotted;
+}
+/* 設定電腦版的desktop-header */
+@media screen and (min-width: 768px) {
+  .desktop-header {
+    display: block;
+  }
+}
