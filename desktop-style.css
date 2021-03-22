@@ -8,10 +8,12 @@ html {
   width: 100vw;
   height: 30px;
   background-color: black;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
 }
 .desktop-header-nav-links{
+  margin: 0 auto;
+  width: 768px;
   height: 30px;
   display: flex;
   align-items: center;
@@ -41,7 +43,9 @@ html {
   padding: 0px 5px 0px 5px;
 }
 .desktop-header-nav a:hover {
-  border: rgba(255, 255, 255, 0.8) 1.5px solid;
+  border: rgb(255, 255, 255) 1.5px solid;
+  background-color:rgb(255, 255, 255) ;
+  color:black;
   border-radius: 5px;
   padding: 0px 5px 0px 5px;
 }
@@ -62,7 +66,7 @@ html {
 }
 .desktop-header-bar {
   width: 740px;
-  height: 30px;
+  height: 10px;
   margin: 10px auto;
   border-top: black 1px dotted;
   border-bottom: black 1px dotted;
@@ -71,5 +75,193 @@ html {
 @media screen and (min-width: 768px) {
   .desktop-header {
     display: block;
+  }
+}
+.desktop-body{
+  display: none;
+}
+.desktop-body-left{
+  width: 50%;
+}
+.desktop-body-feature {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #424242;
+  margin: 10px auto 0 auto;
+  padding-left: 15px;
+  position: relative;
+  top: 5px;
+  width: 250px;
+}
+.desktop-body-name {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  vertical-align: sub;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+}
+.desktop-body-email {
+  width: 300px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.desktop-body-email-context {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+  color: #ffa028;
+  background-color: black;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+}
+.desktop-body-DESC {
+  margin: 25px auto 0 auto;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 900;
+  color: #292929;
+  line-height: 25px;
+  width: 300px;
+}
+.desktop-body-topic {
+  margin: 0 auto;
+  width: 300px;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+.desktop-body-topic li {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  color: #292929;
+  transition: font-weight 0.1s ease-out;
+  list-style-type: disc; 
+}
+.desktop-body-note {
+  margin: 10px auto 0 auto;
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  color: #5a5a5a;
+  width: 300px;
+}
+.desktop-body-pic-img {
+    position: relative;
+    bottom: 5px;
+    left: 210px;
+    width: 90px;
+    height: 90px;
+  }
+.desktop-body-right-nav{
+  color: #424242;
+  position: relative;
+  top: 3px;
+}
+.desktop-body-right-nav-items{
+  display: flex;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}
+.desktop-body-right-nav-items li{
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  margin-right: 5px;
+  background-color: white
+}
+.desktop-body-right-nav-items li:hover{
+  width: 100px;
+  padding: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #f6f6f6;
+}
+.desktop-body-right-card{
+  margin-top: 3px;
+  margin-right: 5px;
+  width: 431px;
+  height: 308px;
+  background-color: #f6f6f6;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.desktop-body-right-card-function {
+  padding: 5px 5px 0 5px;
+  font-size: 35px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 900;
+  color: #292929;
+  line-height: 35px;
+  width: 300px;
+}
+.desktop-body-right-card-Title{
+  padding: 0 5px 0 5px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 600;
+  color: #292929;
+  width: 300px;
+  line-height: 25px;
+}
+.desktop-body-right-card-Company{
+  padding: 0 5px 0 5px;
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 600;
+  color: #424242;
+  width: 300px;
+}
+.desktop-body-right-card-skillSets {
+  padding: 0 5px 0 5px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  color: #292929;
+  width: 300px;
+}
+.desktop-body-right-card-skillSet {
+  margin-left: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  color: #292929;
+  list-style-type: disc;
+}
+.desktop-body-right-card-DESC {
+  margin: 15px 5px 0 5px;
+  border-top: dotted 1px black;
+  border-bottom: dotted 1px black;
+}
+.desktop-body-right-card-DESC-context {
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  color: #424242;
+  line-height:20px;
+}
+/* 設定電腦版的desktop-body */
+@media screen and (min-width: 768px) {
+  .desktop-body {
+  margin: 0 auto;
+  width: 768px;
+  height: 350px;
+  display: flex;
   }
 }
