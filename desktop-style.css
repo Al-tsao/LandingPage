@@ -65,7 +65,7 @@ html {
   height: 100px;
 }
 .desktop-header-bar {
-  width: 740px;
+  width: 768px;
   height: 10px;
   margin: 10px auto;
   border-top: black 1px dotted;
@@ -79,9 +79,6 @@ html {
 }
 .desktop-body{
   display: none;
-}
-.desktop-body-left{
-  width: 50%;
 }
 .desktop-body-feature {
   font-family: "Archivo Black", sans-serif;
@@ -179,13 +176,21 @@ html {
 .desktop-body-right-nav-items li{
   width: 100px;
   height: 30px;
-  padding: 2px;
+  padding: 5px 2px 2px 2px;
   margin-right: 5px;
   background-color: white
 }
 .desktop-body-right-nav-items li:hover{
+  cursor: pointer;
   width: 100px;
-  padding: 2px;
+  padding: 5px 2px 2px 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #f6f6f6;
+}
+.desktop-body-right-nav-items .active{
+  width: 100px;
+  padding: 5px 2px 2px 2px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: #f6f6f6;
@@ -198,6 +203,15 @@ html {
   background-color: #f6f6f6;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.desktop-body-right-card.borderRadiusLeftSide{
+  border-top-right-radius: 5px;
+}
+.desktop-body-right-card.borderRadiusRightSide{
+    border-top-left-radius: 5px;
+}
+.desktop-body-right-card.borderRadiusMiddle{
+  border-radius: 5px;
 }
 .desktop-body-right-card-function {
   padding: 5px 5px 0 5px;
@@ -265,3 +279,4 @@ html {
   display: flex;
   }
 }
+/* 共用組件 */

@@ -188,7 +188,7 @@
       </div>
       <div class="desktop-header-bar"></div>
     </div>
-    <div class="desktop-body">
+    <div id="app" class="desktop-body">
       <div class="desktop-body-left">
         <div class="desktop-body-feature">Multitalented</div>
         <div class="desktop-body-name">AL TSAO</div>
@@ -214,13 +214,17 @@
       <div class="desktop-body-right">
         <div class="desktop-body-right-nav">
           <ul class="desktop-body-right-nav-items">
-            <li>Risk</br>Assessment</li>
-            <li>Business</br>Development</li>
-            <li>Digital</br>Transformation</li>
-            <li>Eeb</br>Development</li>
+            <!-- <li v-bind:class="active: RA">Risk</br>Assessment</li>
+            <li v-bind:class="active: BD">Business</br>Development</li>
+            <li v-bind:class="active: DT">Digital</br>Transformation</li>
+            <li v-bind:class="active: WD">Eeb</br>Development</li> -->
+            <li v-bind:class="{active: RA}" v-on:click="ClickRA">Risk</br>Assessment</li>
+            <li v-bind:class="{active: BD}" v-on:click="ClickBD">Business</br>Development</li>
+            <li v-bind:class="{active: DT}" v-on:click="ClickDT">Digital</br>Transformation</li>
+            <li v-bind:class="{active: WD}" v-on:click="ClickWD">Web</br>Development</li>
           </ul>
         </div>
-        <div class="desktop-body-right-card">
+        <div v-show="RA" class="desktop-body-right-card borderRadiusLeftSide">
           <div class="desktop-body-right-card-function">Risk </br>Assessment</div>
           <div class="desktop-body-right-card-Title">Senior PE Fund Credit Analyst </div>
           <div class="desktop-body-right-card-Company">@ Cathay United Bank</div>
@@ -239,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="desktop-body-right-card">
+        <div v-show="BD" class="desktop-body-right-card borderRadiusMiddle">
           <div class="desktop-body-right-card-function">Business</br>Development</div>
           <div class="desktop-body-right-card-Title">Consultant </div>
           <div class="desktop-body-right-card-Company">@ Taiwan Listed Company</div>
@@ -257,7 +261,7 @@
             </div>
           </div>
         </div>
-        <div class="desktop-body-right-card">
+        <div v-show="DT" class="desktop-body-right-card borderRadiusMiddle">
           <div class="desktop-body-right-card-function">Digital</br>Transformation</div>
           <div class="desktop-body-right-card-Title">Supervisor</div>
           <div class="desktop-body-right-card-Company">@ EUROFINS Taiwan</div>
@@ -275,7 +279,7 @@
             </div>
           </div>
         </div>
-        <div class="desktop-body-right-card">
+        <div v-show="WD" class="desktop-body-right-card borderRadiusRightSide">
           <div class="desktop-body-right-card-function">Web</br>Development</div>
           <div class="desktop-body-right-card-Title">Front-End Developer</div>
           <div class="desktop-body-right-card-Company">Freelancer</div>
@@ -290,6 +294,9 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
