@@ -64,8 +64,8 @@ html {
   top: -10px;
 }
 .mobile-header-DESC {
-  margin: 25px auto 0 auto;
-  font-size: 20px;
+  margin: 25px auto 5px auto;
+  font-size: 25px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 900;
   color: #292929;
@@ -82,18 +82,20 @@ html {
   text-decoration: none;
 }
 .mobile-header-topic li {
-  margin-left: 20px;
-  font-size: 18px;
-  line-height: 23px;
+  margin: 0 0  10px 30px;
+  font-size: 25px;
+  line-height: 20px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
   color: #292929;
   transition: font-weight 0.1s ease-out;
-  list-style-type: disc; 
+  list-style-type: disc;
+  border: 2px solid white; 
+  text-decoration:none;
 }
 .mobile-header-topic li:hover{
-  font-weight: 700;
   color: #424242;
+  text-decoration:underline;
 }
 .mobile-header-note {
   margin: 10px auto 0 auto;
